@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Youvan</string>
+    <string name="log_email"> Email…</string>
+    <string name="log_text">Log in</string>
+    <string name="log_username_text">UserName</string>
+    <string name="forget_password_text">Forgot Your Password?</string>
+    <string name="login_submit_button_text">Log in</string>
+    <string name="login_sign_up_text">Sign up</string>
+    <string name="login_ask_text">Don\'t have an account?</string>
+    <string name="log_password">Password…</string>
+    <string name="menu_logout">LogOut</string>
+
+    <string-array name="item_name">
+        <item>Book</item>
+        <item>Notebook</item>
+        <item>School Bag</item>
+        <item>School Black Shoe</item>
+        <item>School White Shoe</item>
+        <item>Pencil</item>
+        <item>Color Pencil</item>
+        <item>Pen</item>
+        <item>Leather Belt</item>
+        <item>Pencil Box</item>
+    </string-array>
+
+    <string-array name="item_quantity">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+</resources>

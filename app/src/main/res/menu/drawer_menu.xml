@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:title="DashBoard"
+            android:id="@+id/menu_dashboard"
+            android:icon="@drawable/dashboard_icon"/>
+        <item
+            android:title="My Profile"
+            android:id="@+id/menu_profile"
+            android:icon="@drawable/profile_icon"/>
+
+        <item
+            android:title="My Donations"
+            android:id="@+id/menu_donation"
+            android:icon="@drawable/donation_icon_24"
+            />
+
+        <item
+            android:title="My Reward Points"
+            android:id="@+id/menu_reward"
+            android:icon="@drawable/reward_icon"/>
+
+        <item
+            android:title="Logout"
+            android:id="@+id/menu_logout"
+            android:icon="@drawable/logout_icon"/>
+
+    </group>
+
+
+</menu>

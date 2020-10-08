@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/profile_background"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MyProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:src="@drawable/default_profile_image"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#F98866">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="2dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:src="@drawable/person_icon"
+                android:layout_weight="0.20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/fragment_profile_student_name"
+                android:text="UserName"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_weight="0.80"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="2dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:src="@drawable/school_icon"
+                android:layout_weight="0.20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/fragment_profile_school_name"
+                android:text="ABC High School"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_weight="0.80"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="2dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:src="@drawable/mobile_icon"
+                android:layout_weight="0.20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/fragment_profile_student_mobile"
+                android:text="91-1234567890"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_weight="0.80"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="2dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:src="@drawable/email_icon"
+                android:layout_weight="0.20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/fragment_profile_student_email"
+                android:text="xxx@gmail.com"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_weight="0.80"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/update_profile_btn"
+            android:background="@drawable/circular_button_white"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Profile"
+            android:textAllCaps="false"
+            android:textColor="#FC94AF"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

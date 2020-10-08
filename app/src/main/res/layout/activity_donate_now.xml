@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".DonateNowActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="3.1"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:text="Add Item"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/main_color"
+        android:layout_weight="0.15"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/donation_item_image"
+        android:text="Add Item"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/item_icon"
+        android:layout_width="120dp"
+        android:layout_weight="0.60"
+        android:layout_height="0dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#F98866"/>
+
+        <Button
+            android:id="@+id/donation_add_item_image_btn"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.16"
+            android:layout_height="0dp"
+            android:text="Add Item Image"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:layout_gravity="center_horizontal"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:background="@drawable/circular_button"
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="7"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+    <Spinner
+        android:id="@+id/donation_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/spinner_style" />
+
+    <Spinner
+        android:id="@+id/donation_item_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/spinner_style" />
+
+        <Button
+            android:id="@+id/donation_add_item_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:text="Add Item"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:background="@drawable/circular_button"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:text="Donated Items"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/main_color"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#D3D3D3"
+            android:layout_marginTop="10dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/donation_item_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
